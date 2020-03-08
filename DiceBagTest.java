@@ -38,10 +38,11 @@ class DiceBagTest {
 		Token t1;
 		//DiceBag diceBag1=Mockito.mock(DiceBag.class);
 		diceBag.addToken(t);
+		diceBag.addToken(t);
 		int bagSize=diceBag.bag.size();
 		t1=diceBag.drawToken();
 		int bagSize1=diceBag.bag.size();
-		assertEquals(bagSize,bagSize1);
+		assertEquals(bagSize-1,bagSize1);
 	}
 
 	@Test
