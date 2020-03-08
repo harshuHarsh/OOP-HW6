@@ -20,7 +20,7 @@ public class GameController {
 		while ((t = d.drawToken()) != null) {
 			out.println("Token drawn: " + t.toString());
 			
-			if (t.toString().contains("Tom")) {
+			if (t.toString().contains(player1.getName())) {
 				player1.addToken(t);
 				out.println("Player " + player1.getName() + " gets the token!");
 			} else {
